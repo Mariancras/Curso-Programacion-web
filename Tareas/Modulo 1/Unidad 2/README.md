@@ -6,4 +6,4 @@
 
 Imagen seleccionada:
 
-<a href="https://raw.githubusercontent.com/Mariancras/Curso-Programacion-web/main/Tareas/Modulo%201/Unidad%202" target="Mabelita"> <img src="/mabel.png" width="90" height="120"/></a> 
+<a href="https://raw.githubusercontent.com/Mariancras/Curso-Programacion-web/main/Tareas/Modulo 1/Unidad 2" target="Mabelita"> <img src="/mabel.png" width="90" height="120"/></a> 
