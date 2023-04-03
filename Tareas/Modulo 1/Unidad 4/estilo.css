@@ -1,15 +1,45 @@
+/*----------trabajo por etiqueta*/
+
+/* aplico color negro a los textos */
 p{
     color: black;
     
 }
+/*Cambio la fuente de todos los titulos por una palo seco (aunque deberia 
+ser la fuente de parrafo de palo seco y los titulos con serifa) */
 h1,h2,h3,h4,h5,h6{
     font-family: Arial, Helvetica, sans-serif;
     
 }
+
+/*le quito espacio a los subtitulos nivel 3 4 y5*/
 h3,h4,h5{
     margin: 0;
 }
 
-.intro {text-indent: 30px;}
+/*----------trabajo por ID*/
+/*todo el articulo con fondo de color diferente*/
+#formacionAcademica{
+    background-color: cadetblue;
+}
 
-  
+
+/*----------trabajo por clases*/
+/*Sangria para la intro*/
+.intro {text-indent: 30px;}
+/*fechas en la misma linea que el empleador pero a la derecha*/
+.fechaDeTrabajo {float: right;}
+
+
+/*----------trabajo por psuedoclase*/
+/*pseudoclase + ID*/
+/*poner fondo rojo cuando se le coloca el raton encima a la caja del titulo contacto*/
+#contacto:hover{
+    background-color: red;
+}
+
+/*pseudoclase + etiqueta*/
+/*poner el fondo amarillo de los inputs al seleccionarlos*/
+input:focus{
+    background: yellow;
+}
