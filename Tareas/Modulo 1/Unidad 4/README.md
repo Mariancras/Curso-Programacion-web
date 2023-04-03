@@ -1,9 +1,7 @@
-# Tarea-Unidad-3
+# Tarea-Unidad-4
 
 ## Actividad del curso Diplomatura en programación web full stack con React JS 2023
 
-### HTML
+### CSS intro
 
-Armar el diseño de un CV utilizando las etiquetas aprendidas en la unidad.
-
- 
+Crear un archivo de hoja de estilos y vincularlo al HTML de la tarea anterior (diseño del CV). Agregar un mínimo de 4 reglas en el archivo css. 
