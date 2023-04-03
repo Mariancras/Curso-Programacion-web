@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primer HTML - Unidad 3</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="icon" href="FaviconUtnHechoConPS.gif" type="image/gif" />
+    <body style="background-color:darkgrey;"> </body>
+</head>
+<body>
+    <header>
+        <h1 style="font-family: Helvetica, sans-serif; text-align: center;" >Curriculum Vitae Mariano Marasco</h1>
+    </header>
+    <hr style="height:5px; color:black ; background-color: black">
+    <section>
+        <strong>
+            <p class="intro">Llevo casi 10 años trabajando en el rubro IT y me apasiona como el primer día. </p>
+            <p class="intro">Actualmente me desempeño como Analista QA/QC, puesto donde puedo aplicar mis habilidades de planificación, metodologías ágiles, trabajo en equipo, mis conocimientos en tecnología y mi capacidad de análisis al detalle para garantizar la calidad del producto y la satisfacción del usuario.</p>
+        </strong>
+    </section>
+    <section>  
+            <img src="foto perfil.jpg" alt="foto de perfil" align="right" width="400"/> <!--VS me marca aling en rojo, me gustaria saber porque.-->
+        <article>
+            <h2>EXPERIENCIA:</h2>
+            <h3>Software QA/QC Analyst</h3>
+            <h4 >Secretaría de Innovación Tecnológica</h4><h4 style="text-align: right;"> Sept.2021 - Actualidad</h4> <!--Me gustaria que estos dos h4 queden en el mismo renglon, uno aliniado a la izquierda y otro a la derecha. Insertar &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; me parece horrendo jaja// 
+                Aplicar aling o text-aling me dio el mismo resultado. tienen diferencias?-->
+            <p> QA/QC - Testing Automatizado y Unitario - Metodologías Ágiles - Creación Plan de Pruebas - Análisis de rendimiento - Propuestas de Mejoras
+                </p>
+            <h5>Herramientas utilizadas:</h5>
+            <uL> 
+                <li>Selenium</li>
+                <li>Jira</li> 
+                <li>JMeter</li>
+                <li>Confluence</li>
+                <li>SQL</li>
+            </uL>
+            <h3>System Analyst</h3>
+            <h4>Secretaría de Innovación Tecnológica&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; &emsp;&emsp;Oct.2020 - Sept.2021</h4>
+            <!-- inserte los espacios con &emsp para probar la diferencia-->
+            <p> Análisis de Mejoras - Gestión de Incidencias – Nexo Cliente y Desarrollador</p>
+            <h5>Herramientas utilizadas:</h5>
+            <uL> 
+                <li>Jira</li>
+                <li>GDE</li> 
+                <li>SQL</li> 
+            </uL>
+        </article>
+        <hr style="height:1px; background-color: black;">
+        <article> 
+            <h2> Video Sobre mi:</h2>
+            <video width="200" src="TEST VIDEO.mp4" poster="foto perfil.jpg" controls> </video>
+        </article>
+        <hr style="height:1px; background-color: black;">
+        <article>   
+            <h2>FORMACIÓN ACADÉMICA:</h2>
+            <h3>Universitarios:</h3>
+            <h4>Ingeniería en Sistemas Informáticos</h4>
+            <h5>Universidad Tecnológica Nacional</h5>
+            <a href="https://www.frba.utn.edu.ar/sistemas/plan-de-estudios-2023/" target="_blank"> Plan de Estudios</a>
+            <p> 2017-2023</p>
+            <h3>Cursos Relevantes:</h3>
+            <h4>Diplomatura en programación web full stack</h4>
+            <h5>Universidad Tecnológica Nacional</h5>
+            <p> 2023</p>
+            <h5>Herramientas utilizadas:</h5>
+            <oL> 
+                <li>JavaScript</li>
+                <li>HTML & CSS</li> 
+                <li>React</li>
+                <li>Node.js</li>
+                <li>MongoDB</li>
+            </oL>
+        </article>
+    </section>
+    <hr style="height:1px; background-color: black;">
+    <section>
+        <h2>Contacto:</h2>
+        <form action="/formulario" method="post">
+            <label for="id_nombre">Nombre:</label>
+            <input type="text" id="id_nombre" name="Nombre:" placeholder="Inserte aquí su nombre"/>
+            <br>
+            <label for="id_email">Email de contacto:</label>
+            <input type="email" id="id_email" name="Email:" placeholder="Inserte aquí un email de contacto"/>
+            <br>
+            <label for="id_urgente">Mi Propuesta es urgente:</label>
+            <input type="checkbox" name="urgente" value="urgente" id="id_urgente"/>
+            <br>
+            <label for="id_tipoDePropuesta">Tipo de Propuesta:</label>
+            <br>
+            <label>Laboral:</label>
+            <input type="radio" name="tipoDeProupuesta" value="Laboral"/>
+            <label>Sugerencia:</label>
+            <input type="radio" name="tipoDeProupuesta" value="Sugerencia"/>
+            <br>
+            <label for="id_comentario">Propuesta o comentario:</label><br>
+            <textarea cols= "100" rows="5" id="id_comentario" name="Comentario:" placeholder="Ingrese su propuesta o comentario."></textarea>
+            <br>
+            <button type="submit">Enviar </button>
+            <button type="reset"> Borrar el formulario</button>
+        </form>
+    </section>
+
+    <hr style="height:1px; background-color: black;">
+    <footer>
+        <p><a href="mailto:mariano.marasco@hotmail.com">Enviame un Email directo</a></p>
+    </footer>
+</body>
+</html>
