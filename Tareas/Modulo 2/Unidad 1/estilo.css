@@ -3,7 +3,7 @@
 /*----------trabajo por ID*/
 /*todo el articulo con fondo de color diferente*/
 
-/*---AQUI AGREGARE LOS CONCEPTOS DE LA NUEVA TAREA. modulo 2 - uniddad 1 css Parte 1---*/
+/*---AQUI AGREGARE LOS CONCEPTOS DE LA TAREA. modulo 2 - unidad 1 css Parte 1---*/
 
 #formacionAcademica{
     /*background-color: cadetblue; comento esta linea para introducir un nuevo concepto
@@ -27,7 +27,7 @@
     font-family: 'Roboto', sans-serif; /*la tipografia fue importada con italica, por lo que no se aclara aqui pero tendra dicho formato*/
     font-size: 13px;
 }
-
+/*---AQUI TERMINAN LOS CONCEPTOS DE LA TAREA. modulo 2 - unidad 1 css Parte 1---*/
 
 
 /* aplico color negro a los textos */
@@ -72,6 +72,7 @@ input:focus{
 }
 
 
+/*---AQUI AGREGARE FILTRO DE IMAGEN  DE LA TAREA. modulo 2 - unidad 1 css Parte 1---*/
 img{/*filtro escala de grises mara las imagenes*/
     filter: grayscale(100%);
     -webkit-filter: grayscale(100%);
@@ -80,3 +81,4 @@ img{/*filtro escala de grises mara las imagenes*/
 img:hover {
     filter: grayscale(0);
 }
+/*---AQUI TERMINAN LOS CONCEPTOS DE LA TAREA. modulo 2 - unidad 1 css Parte 1---*/
