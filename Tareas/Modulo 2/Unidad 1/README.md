@@ -7,6 +7,7 @@
 Consigna:
 Agregar un mínimo de 2 reglas aprendidas en esta unidad en el archivo css en el diseño de nuestro CV
 
+
 Cambios realizados:
 
 en HTML:
