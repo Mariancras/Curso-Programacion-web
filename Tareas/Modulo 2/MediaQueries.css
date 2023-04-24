@@ -1,0 +1,88 @@
+/*cuando la pantalla sea menor a 800*/
+body {
+    background-color: #342f2b;
+    margin: 0;
+}
+
+.contenedor {
+    background-color: #8ea68e;
+}
+
+nav {
+    background-color: #ffcc66;
+    margin-bottom: -13px;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    padding: 5px;
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+}
+
+section {
+
+    background-color: #f2f2c0;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    margin-bottom: 3px;
+}
+
+aside {
+    background-color: #cdc59e;
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+
+/*---Cuando la pantalla sea mayor a 800---*/
+
+@media screen and (min-width: 800px) {
+    body {
+        display: flex;
+        justify-content: center;
+    }
+
+    .contenedor {
+        margin: 10px;
+        width: 95%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+    }
+
+    h1 {
+        width: 100%;
+
+    }
+
+    .contenedor nav {
+        background-color: #d9450c;
+
+        padding-top: 1px;
+        padding-bottom: 1px;
+
+        width: 15%;
+        height: fit-content;
+    }
+
+    nav ul li a {
+        color: white;
+    }
+
+    .contenedor section {
+        width: 60%;
+        height: fit-content;
+    }
+
+    .contenedor aside {
+        width: 20%;
+        height: fit-content;
+    }
+}
