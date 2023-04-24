@@ -64,8 +64,19 @@ h3,h4,h5{
     background-color: red;
 }
 
+
 /*pseudoclase + etiqueta*/
 /*poner el fondo amarillo de los inputs al seleccionarlos*/
 input:focus{
     background: yellow;
+}
+
+
+img{/*filtro escala de grises mara las imagenes*/
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+}
+img:hover {
+    filter: grayscale(0);
 }
