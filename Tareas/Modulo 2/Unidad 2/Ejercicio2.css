@@ -1,0 +1,11 @@
+article{      
+    border: 10px solid black;
+    display: flex;
+    justify-content: space-between;
+    }
+    
+
+img{
+    height: 300px;
+    width: 250px;    
+}

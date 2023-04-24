@@ -1,0 +1,19 @@
+body {
+    display: flex;
+    justify-content: center;
+}
+
+article {
+    width: 750px;
+    height: 900px;
+    border: 10px solid black;
+
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+img {
+    height: 300px;
+    width: 250px;
+}
