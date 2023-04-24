@@ -1,0 +1,71 @@
+/*----------trabajo por etiqueta*/
+
+/*----------trabajo por ID*/
+/*todo el articulo con fondo de color diferente*/
+
+/*---AQUI AGREGARE LOS CONCEPTOS DE LA NUEVA TAREA. modulo 2 - uniddad 1 css Parte 1---*/
+
+#formacionAcademica{
+    /*background-color: cadetblue; comento esta linea para introducir un nuevo concepto
+    propio de esta tarea, el gradiente de color:*/
+    background: rgb(94,252,232); /*ESTABLEZCO COLOR DE FONDO para navegadores viejos*/
+    background: linear-gradient(135deg, rgba(94,252,232,1) 0%, rgba(115,110,254,1) 100%); /*APLICO UN COLOR EN GRADIENTE*/
+    
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);/*agrego sombra*/
+    
+    border-radius: 11px 0px 11px 0px;/*agrego bordes redondeados*/
+
+    padding: 20px;
+
+    margin: 10px;/*pequeño margen para que se visualice mejor*/
+}
+
+#textoFormacionAcademica{
+    column-count: 3; 
+    column-gap: 30px;
+    text-align: justify;
+    font-family: 'Roboto', sans-serif; /*la tipografia fue importada con italica, por lo que no se aclara aqui pero tendra dicho formato*/
+    font-size: 13px;
+}
+
+
+
+/* aplico color negro a los textos */
+p{
+    color: black;
+    
+}
+/*Cambio la fuente de todos los titulos por una palo seco (aunque deberia 
+ser la fuente de parrafo de palo seco y los titulos con serifa) */
+h1,h2,h3,h4,h5,h6{
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+/*le quito espacio a los subtitulos nivel 3 4 y5*/
+h3,h4,h5{
+    margin: 0;
+}
+
+
+
+
+/*----------trabajo por clases*/
+/*Sangria para la intro*/
+.intro {text-indent: 30px;}
+/*fechas en la misma linea que el empleador pero a la derecha*/
+.fechaDeTrabajo {float: right;}
+
+
+/*----------trabajo por psuedoclase*/
+/*pseudoclase + ID*/
+/*poner fondo rojo cuando se le coloca el raton encima a la caja del titulo contacto*/
+#contacto:hover{
+    background-color: red;
+}
+
+/*pseudoclase + etiqueta*/
+/*poner el fondo amarillo de los inputs al seleccionarlos*/
+input:focus{
+    background: yellow;
+}
