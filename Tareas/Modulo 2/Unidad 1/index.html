@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primer HTML - Unidad 3</title>
+    
+    <link rel="icon" href="FaviconUtnHechoConPS.gif" type="image/gif" />
+    
+    <!-- aqui estoy aplicando un estilo a modo de ejemplo que corresponderia aplicar en la hoja css-->
+    <body style="background: linear-gradient(#bdc3c7, #2c3e50);"> </body>
+    
+    <!-- Importo la tipografia roboto con ital-->
+    <style>   @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap');  </style>
+
+    <!-- Importo Iconos-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.css" integrity="sha512-Z0kTB03S7BU+JFU0nw9mjSBcRnZm2Bvm0tzOX9/OuOuz01XQfOpa0w/N9u6Jf2f1OAdegdIPWZ9nIZZ+keEvBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+
+    <link rel="stylesheet" href="estilo.css">
+
+</head>
+<body>
+    <header>
+        <h1 style="font-family: Helvetica, sans-serif; text-align: center;" >Curriculum Vitae Mariano Marasco</h1>
+    </header>
+    <hr style="height:5px; color:black ; background-color: black">
+    <section>
+        <strong>
+            <p class="intro">Llevo casi 10 años trabajando en el rubro IT y me apasiona como el primer día. </p>
+            <p class="intro">Actualmente me desempeño como Analista QA/QC, puesto donde puedo aplicar mis habilidades de planificación, metodologías ágiles, trabajo en equipo, mis conocimientos en tecnología y mi capacidad de análisis al detalle para garantizar la calidad del producto y la satisfacción del usuario.</p>
+        </strong>
+    </section>
+    <section>  
+            <img src="foto perfil.jpg" alt="foto de perfil" align="right" width="400"/> <!--VS me marca aling en rojo, me gustaria saber porque.-->
+        <article>
+            <h2>EXPERIENCIA:</h2>
+            <h3>Software QA/QC Analyst</h3>
+            <h4 class="fechaDeTrabajo"> Sept.2021 - Actualidad</h4><h4 >Secretaría de Innovación Tecnológica</h4>
+            <p> QA/QC - Testing Automatizado y Unitario - Metodologías Ágiles - Creación Plan de Pruebas - Análisis de rendimiento - Propuestas de Mejoras
+                </p>
+            <h5>Herramientas utilizadas:</h5>
+            <uL> 
+                <li>Selenium</li>
+                <li>Jira</li> 
+                <li>JMeter</li>
+                <li>Confluence</li>
+                <li>SQL</li>
+
+                
+            </uL>
+            <h3>System Analyst</h3>
+            <h4 class="fechaDeTrabajo">Oct.2020 - Sept.2021</h4><h4>Secretaría de Innovación Tecnológica</h4>
+            <p> Análisis de Mejoras - Gestión de Incidencias – Nexo Cliente y Desarrollador</p>
+            <h5>Herramientas utilizadas:</h5>
+            <uL> 
+                <li>Jira</li>
+                <li>GDE</li> 
+                <li>SQL</li> 
+            </uL>
+        </article>
+        <hr style="height:1px; background-color: black;">
+        <article> 
+            <h2> Video Sobre mi:</h2>
+            <video width="200" src="TEST VIDEO.mp4" poster="foto perfil.jpg" controls> </video>
+        </article>
+        <hr style="height:1px; background-color: black;">
+        <article id="formacionAcademica">   
+            <h2><!-- agrego icono estrella--><i class="fa-regular fa-star"></i> FORMACIÓN ACADÉMICA:</h2>
+            <h3>Universitarios:</h3>
+            <h4>Ingeniería en Sistemas Informáticos</h4>
+            <h5>Universidad Tecnológica Nacional</h5>
+            <a href="https://www.frba.utn.edu.ar/sistemas/plan-de-estudios-2023/" target="_blank"> Plan de Estudios</a>
+            <p> 2017-2023</p>
+            <h3>Cursos Relevantes:</h3>
+            <h4>Diplomatura en programación web full stack</h4>
+            <h5>Universidad Tecnológica Nacional</h5>
+            <p> 2023</p>
+            <h5>Herramientas utilizadas:</h5>
+            <oL> 
+                <li>JavaScript</li>
+                <li>HTML & CSS</li> 
+                <li>React</li>
+                <li>Node.js</li>
+                <li>MongoDB</li>
+            </oL>
+            <p id="textoFormacionAcademica">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem culpa similique quos at vel fugiat, in pariatur mollitia recusandae sequi eos cumque sed, iste consequatur cupiditate. Recusandae, corrupti adipisci! Quaerat?
+            Dolores architecto quia quidem, perspiciatis nulla voluptatem facilis necessitatibus hic sint sequi fugit corporis? Perferendis dolorem labore consequuntur veniam. Totam natus sunt dolorem quod maxime dicta distinctio. Obcaecati, laudantium facere.
+            Neque veniam vero soluta explicabo, nobis nam molestias odit, id impedit dicta, iste similique quo veritatis eum officia omnis. Consectetur adipisci laudantium dicta voluptatem ratione repellendus quis provident quaerat neque!
+            Corrupti nostrum ipsa deleniti laboriosam distinctio voluptate consequuntur expedita fuga cumque ullam, earum debitis, nemo soluta sit id explicabo molestias. Asperiores maiores praesentium cupiditate aperiam veniam minima esse rerum incidunt!
+            Sunt, animi quisquam ab modi, iusto reprehenderit aperiam neque, quae quia fuga magnam natus cupiditate molestiae odio vel culpa dolorem veniam voluptatum cumque ad repellat nemo explicabo? Dolor, soluta tempore.</p>
+        </article>
+    </section>
+    <hr style="height:1px; background-color: black;">
+    <section>
+        <h2 id="contacto">Contacto:</h2>
+        <form action="/formulario" method="post">
+            <label for="id_nombre">Nombre:</label>
+            <input type="text" id="id_nombre" name="Nombre:" placeholder="Inserte aquí su nombre"/>
+            <br>
+            <label for="id_email">Email de contacto:</label>
+            <input type="email" id="id_email" name="Email:" placeholder="Inserte aquí un email de contacto"/>
+            <br>
+            <label for="id_urgente">Mi Propuesta es urgente:</label>
+            <input type="checkbox" name="urgente" value="urgente" id="id_urgente"/>
+            <br>
+            <label for="id_tipoDePropuesta">Tipo de Propuesta:</label>
+            <br>
+            <label>Laboral:</label>
+            <input type="radio" name="tipoDeProupuesta" value="Laboral"/>
+            <label>Sugerencia:</label>
+            <input type="radio" name="tipoDeProupuesta" value="Sugerencia"/>
+            <br>
+            <label for="id_comentario">Propuesta o comentario:</label><br>
+            <textarea cols= "100" rows="5" id="id_comentario" name="Comentario:" placeholder="Ingrese su propuesta o comentario."></textarea>
+            <br>
+            <button type="submit">Enviar </button>
+            <button type="reset"> Borrar el formulario</button>
+        </form>
+    </section>
+
+    <hr style="height:1px; background-color: black;">
+    <footer>
+        <p><a href="mailto:mariano.marasco@hotmail.com">Enviame un Email directo</a></p>
+    </footer>
+</body>
+</html>
