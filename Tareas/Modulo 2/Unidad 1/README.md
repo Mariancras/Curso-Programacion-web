@@ -4,11 +4,8 @@
 
 ### CCS Parte 1
 
-
-Armar el diseño de un CV utilizando las etiquetas aprendidas en la unidad.
 Consigna:
 Agregar un mínimo de 2 reglas aprendidas en esta unidad en el archivo css en el diseño de nuestro CV
-
 
 
 Cambios realizados:
