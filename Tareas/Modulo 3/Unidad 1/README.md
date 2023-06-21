@@ -8,5 +8,5 @@ Consigna:
 En base al tema elegido para la entrega del proyecto, maquetar 2 secciones distintas del sitio.
 Subir a un repositorio público en GitHub y compartir la URL del mismo.
 
-Se eligio como tema una pagina web de motos y se maqueto: Home, Guias y Nosotros.
+Se eligió como tema una pagina web de motos y se maqueto: Home, Guías y Nosotros.
 

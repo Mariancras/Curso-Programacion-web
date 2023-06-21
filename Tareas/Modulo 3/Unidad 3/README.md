@@ -6,7 +6,7 @@
 
 Consigna:
 
-Ejericio 1
+Ejercicio 1
 
 Crear el código que dada una distancia determine el medio de transporte apropiado de acuerdo a las siguientes reglas:
 
@@ -20,6 +20,6 @@ Crear el código que dada una distancia determine el medio de transporte apropia
 
 +100000 = avion
 
-Ejericio 2
+Ejercicio 2
 
 Crear el código que reciba como parámetro un array de números y devuelva el mayor.
