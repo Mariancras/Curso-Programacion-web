@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Obtener Mayor</title>
+</head>
+
+<body>
+
+    <script>
+        var numeros = []; //array
+        var num;
+
+        function obtenerMayor(array) {
+            var mayor = array[0];
+            for (var i = 1; i < array.length; i++) {
+                if (array[i] > mayor) {
+                    mayor = array[i];
+                }
+            }
+            return mayor;
+        } //recorro array, me quedo con el mayor. devuelvo el mayor.
+
+
+        do {
+            num = parseInt(prompt('Ingrese un número (0 para finalizar):'));
+            if (!isNaN(num)) {
+                numeros.push(num);
+            }
+        } while (num !== 0); //cartel para ingresar infinitos numeros al array (pueden ser positivos o negativos), se sale con el Cero. en caso de ingresar solo negativos el mayor sera el Cero.
+
+        document.write('El número mayor es: ' + obtenerMayor(numeros));
+    </script>
+</body>
+
+</html>

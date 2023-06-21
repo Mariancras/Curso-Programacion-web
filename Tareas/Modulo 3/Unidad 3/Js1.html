@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medio de Transporte</title>
+</head>
+
+<body>
+
+    <script>
+
+        do {
+            distancia = parseInt(prompt('Ingrese una distancia positiva:'));
+        } while (isNaN(distancia) || distancia < 0); // Un do while para asegurarme que el dato ingresado es un int positivo. 
+        // isNan verifica que distancia sea mayor a 0
+
+        var transporte;
+
+        if (distancia <= 1000) {
+            transporte = 'Pie';
+        } else if (distancia <= 10000) {
+            transporte = 'Bicicleta';
+        } else if (distancia <= 30000) {
+            transporte = 'Colectivo';
+        } else if (distancia <= 100000) {
+            transporte = 'Auto';
+        } else {
+            transporte = 'Avion';
+        }
+
+        var unidadDistancia = distancia === 1 ? 'metro' : 'metros'; //operador ternario para determinar si utilizo la palabra metro o metros.
+
+        document.write(`Para recorrer ${distancia} ${unidadDistancia}, el transporte apropiado es: ${transporte}`);
+
+
+    </script>
+</body>
+
+</html>
