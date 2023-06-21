@@ -1,12 +1,11 @@
-# Tarea-Modulo-3-Unidad-1
+# Tarea-Modulo-3-Unidad-2
 
 ## Actividad del curso Diplomatura en programación web full stack con React JS 2023
 
-### Maquetado de un sitio integrador(parte 1)
+### Maquetado de un sitio integrador(parte 2)
 
 Consigna:
-En base al tema elegido para la entrega del proyecto, maquetar 2 secciones distintas del sitio.
-Subir a un repositorio público en GitHub y compartir la URL del mismo.
+Maquetar 2 secciones más del sitio que iniciaron en la unidad anterior.
 
-Se eligio como tema una pagina web de motos y se maqueto: Home, Guias y Nosotros.
+Subir a la cuenta creada en 000webhost y compartir la URL del sitio creado.
 

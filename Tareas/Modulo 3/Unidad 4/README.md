@@ -1,0 +1,78 @@
+# Tarea-Modulo-3-Unidad-4
+
+## Actividad del curso Diplomatura en programación web full stack con React JS 2023
+
+### Javascript (parte 2)
+
+Consigna:
+
+Ejercicio 1:
+
+Crear un documento html con 3 cuadrados que, al ser clickeados, cambien el color de fondo del documento. Cada cuadrado debera tener un color distinto.
+
+
+Ejercicio 2: 
+
+Programar un contador de caracteres para un textarea.
+
+
+Ejercicio 3:
+
+Dado el siguiente array de alumnos utilizar los métodos de array vistos para generar un array con los alumnos aprobados. Se considera aprobado todo alumno que tenga una nota mayor o igual a 7.
+
+
+var alumnos = [
+
+  {
+
+    nombre: 'Juan Gomez',
+
+    nota: 7
+
+  }, {
+
+    nombre: 'Pedro Rodriguez',
+
+    nota: 4
+
+  }, {
+
+    nombre: 'Roxana García',
+
+    nota: 8
+
+  }, {
+
+    nombre: 'Luciano Lopez',
+
+    nota: 5
+
+  }, {
+
+    nombre: 'Fernanda Gimenez',
+
+    nota: 6
+
+  }, {
+
+    nombre: 'Florencia Martinez',
+
+    nota: 10
+
+  }, {
+
+    nombre: 'Raul Sanchez',
+
+    nota: 7
+
+  }, {
+
+    nombre: 'Sandra Figueroa',
+
+    nota: 8
+
+  }
+
+];
+
+Subir a un repositorio publico en GitHub y compartir la URL del mismo.
