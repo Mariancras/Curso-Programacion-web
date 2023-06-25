@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elegir color de Fondo</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+        }
+
+        .cuadrados {
+            width: 150px;
+            height: 150px;
+            margin: 20px;
+            border: 1px solid black;
+
+            cursor: pointer;
+
+            text-align: center;
+
+            display: flex;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="cuadrados" style="background-color: red;" onclick="cambiarColor(this.style.backgroundColor)">Click para
+        cambiar el color de fondo a Rojo</div>
+    <div class="cuadrados" style="background-color: yellow;" onclick="cambiarColor(this.style.backgroundColor)">Click
+        para cambiar el color de fondo a Amarillo</div>
+    <div class="cuadrados" style="background-color: blue;" onclick="cambiarColor(this.style.backgroundColor)">Click para
+        cambiar el color de fondo a Azul</div>
+
+    <script>
+        function cambiarColor(color) {
+            document.body.style.backgroundColor = color;
+        }
+    </script>
+</body>
+
+</html>

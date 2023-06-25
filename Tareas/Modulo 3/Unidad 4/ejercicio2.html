@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contador de caracteres</title>
+</head>
+
+<body>
+
+  <textarea id="textarea" rows="10" cols="80" oninput="contadorCaracteres()"></textarea> <!--oninput es el evento. señala que cada vez que se ingrese o elimine texto en el area se ejecutara la función-->
+  <p>Total de caracteres: <span id="caracteresTotales">0</span></p>
+
+  <script>
+    function contadorCaracteres() {
+      document.getElementById("caracteresTotales").textContent = document.getElementById("textarea").value.length;
+    }//obtiene el elemento mediante su ID y le aplica textContent para acceder a el contenido.  =   obtiene el elemento textarea mediante su ID le aplica .value para acceder al elemento y length para obtener su longitud
+  </script>
+</body>
+
+</html>
