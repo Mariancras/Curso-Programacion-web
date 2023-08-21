@@ -1,60 +1,36 @@
+import { useState, useEffect} from 'react';
+import axios from 'axios';
+import NovedadItem from '../components/novedades/NovedadItem';
 import React from 'react';
 
 const NovedadesPage = (props) => {
-    return (
-        <main className="holder">
-        <img className="banner" src="img/banner test.jpeg" alt="harley davidson"/>
-        <h2>Noticias</h2>
-        <section>
-            <article className="novedades">
-                <h3>Titulo</h3>
-                <h4>Subtítulos</h4>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim voluptatem totam itaque quidem commodi
-                    accusamus doloribus suscipit mollitia eos placeat! Atque dolor velit corporis perferendis voluptate
-                    corrupti laudantium enim voluptates!
-                    Perferendis cum alias culpa quos officia dolor dignissimos possimus minima, quisquam quae inventore,
-                    reprehenderit exercitationem magnam nulla excepturi iusto veritatis omnis obcaecati libero aliquam,
-                    explicabo quod nam. Ea, ut quae.
-                    Tenetur quam, doloremque, dolorum quae autem assumenda, aut reprehenderit ad fugit nobis velit
-                    dolore
-                    aspernatur officia laboriosam? Neque enim cumque maiores. Quo cupiditate labore minima maiores
-                    temporibus doloremque quae ut?</p>
-                <hr/>
-            </article>
-            <article className="novedades">
-                <h3>Titulo</h3>
-                <h4>Subtítulos</h4>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim voluptatem totam itaque quidem commodi
-                    accusamus doloribus suscipit mollitia eos placeat! Atque dolor velit corporis perferendis voluptate
-                    corrupti laudantium enim voluptates!
-                    Perferendis cum alias culpa quos officia dolor dignissimos possimus minima, quisquam quae inventore,
-                    reprehenderit exercitationem magnam nulla excepturi iusto veritatis omnis obcaecati libero aliquam,
-                    explicabo quod nam. Ea, ut quae.
-                    Tenetur quam, doloremque, dolorum quae autem assumenda, aut reprehenderit ad fugit nobis velit
-                    dolore
-                    aspernatur officia laboriosam? Neque enim cumque maiores. Quo cupiditate labore minima maiores
-                    temporibus doloremque quae ut?</p>
-                <hr/>
-            </article>
-            <article className="novedades">
-                <h3>Titulo</h3>
-                <h4>Subtítulos</h4>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim voluptatem totam itaque quidem commodi
-                    accusamus doloribus suscipit mollitia eos placeat! Atque dolor velit corporis perferendis voluptate
-                    corrupti laudantium enim voluptates!
-                    Perferendis cum alias culpa quos officia dolor dignissimos possimus minima, quisquam quae inventore,
-                    reprehenderit exercitationem magnam nulla excepturi iusto veritatis omnis obcaecati libero aliquam,
-                    explicabo quod nam. Ea, ut quae.
-                    Tenetur quam, doloremque, dolorum quae autem assumenda, aut reprehenderit ad fugit nobis velit
-                    dolore
-                    aspernatur officia laboriosam? Neque enim cumque maiores. Quo cupiditate labore minima maiores
-                    temporibus doloremque quae ut?</p>
-                <hr/>
-            </article>
-        </section>
+    const [loading, setLoading] = useState(false);
+    const [novedades, setNovedades] = useState([]);
 
-    </main>
+    useEffect(() => {
+        const cargarNovedades = async () => {
+            setLoading(true);
+            const response = await axios.get('http://localhost:3000/api/novedades');
+            setNovedades(response.data);
+            setLoading(false);
+        };
+
+        cargarNovedades();
+    }, []);
+
+    return(
+        <section className="holder">
+            <h2>Noticias</h2>
+            {loading ? (
+                <p>Cargando...</p>
+            ) : (
+                novedades.map(item => <NovedadItem key={item.id}
+                    title={item.titulo} subtitle={item.subtitulo} imagen={item.imagen} body={item.cuerpo} />)
+            )}
+        </section>
     );
+
+
 }
 
 export default NovedadesPage;
